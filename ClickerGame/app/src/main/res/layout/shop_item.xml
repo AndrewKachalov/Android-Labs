@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_cursor" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cursor"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/itemIcon"
+        app:layout_constraintTop_toTopOf="@id/itemIcon"
+        app:layout_constraintEnd_toStartOf="@id/buyButton"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/itemLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level: 0"
+        app:layout_constraintStart_toStartOf="@id/itemName"
+        app:layout_constraintTop_toBottomOf="@id/itemName"
+        android:textSize="14sp"/>
+
+    <ImageButton
+        android:id="@+id/buyButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:padding="4dp"
+        android:src="@drawable/ic_buy"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemIcon"
+        app:tint="@null"/>
+
+
+    <Spinner
+        android:id="@+id/quantitySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/shop_quantities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemIcon" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost: 0"
+        app:layout_constraintBottom_toBottomOf="@id/quantitySpinner"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/shopFragment"
+        android:icon="@drawable/ic_shop"
+        android:title="Shop" />
+    <item
+        android:id="@+id/ascendationsFragment"
+        android:icon="@drawable/ic_ascendations"
+        android:title="Ascendations" />
+    <item
+        android:id="@+id/achievementsFragment"
+        android:icon="@drawable/ic_achievements"
+        android:title="Achievements" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>

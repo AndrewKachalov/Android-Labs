@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClickerGame</string>
+    <string name="desc_clicker_button">Going</string>
+    <string-array name="shop_quantities">
+        <item>1</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+</resources>

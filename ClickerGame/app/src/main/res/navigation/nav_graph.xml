@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/clickerFragment">
+
+    <fragment
+        android:id="@+id/clickerFragment"
+        android:name="com.example.clickergame.fragments.ClickerFragment"
+        tools:layout="@layout/fragment_clicker"/>
+
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.clickergame.shop.ShopFragment"
+        tools:layout="@layout/fragment_shop" />
+
+
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="com.example.clickergame.fragments.AchievementsFragment"
+        tools:layout="@layout/fragment_achievements"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.clickergame.fragments.SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+
+    <fragment
+        android:id="@+id/ascendationsFragment"
+        android:name="com.example.clickergame.fragments.AscendationsFragment"
+        tools:layout="@layout/fragment_ascendations" />
+</navigation>
